@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD230 Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtis Halls - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="Home Page">
+  <meta name="author" content="Curtis Halls">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <h1>Welcome to WDD230 Web Projects</h1>
-    <p>Curtis Halls - WDD130</p>
+  <header>
+    <img src="images/profile.jpg" alt="Dispite everything it's still me">
+    <span>Curtis Halls</span>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Site Plan</a></li>
+      <li><a href="#">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>WDD 230: Web Frontend Development</h1>
+    
+    <section class="card">
+      <h2>Learning Activities</h2>
+      <ul>
+        <!-- Placeholder list items for learning activities -->
+        <li><a href="#">Activity 1</a></li>
+        <li><a href="#">Activity 2</a></li>
+        <li><a href="#">Activity 3</a></li>
+      </ul>
+    </section>
+    
+    <section class="card">
+      <h2>Information</h2>
+      <p>Layton, Utah</p>
+      <p>Weather: ???</p>
+      <p>Number of visits: ???</p>
+      <p>*To be replaced with (hopefully accurate) Javascript readouts upon a latter assignment*</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="year"></span> Curtis Halls, Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
 </body>
 </html>

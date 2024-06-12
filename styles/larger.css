@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    nav ul {
+      flex-direction: row; /* Horizontal for larger views */
+    }
+  
+    main {
+      grid-template-columns: 2fr 1fr; /* Two columns for larger views */
+    }
+  
+    .card:first-child {
+      grid-column: span 2; /* Learning Activities card twice as wide */
+    }
+  }
+  
