@@ -6,16 +6,28 @@
   <title>Curtis Halls - WDD 230 - Web Frontend Development</title>
   <meta name="description" content="Home Page">
   <meta name="author" content="Curtis Halls">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/reno-favicon.png" type="image/x-icon">
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Curtis Halls - WDD 230 - Web Frontend Development">
+  <meta property="og:description" content="Home Page">
+  <meta property="og:image" content="images/profile.jpg">
+  <meta property="og:url" content="https://mystdrago.github.io/wdd230/">
+  <meta name="twitter:card" content="summary_large_image">
+  
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Dispite everything it's still me">
+    <img src="images/profile.jpg" alt="Despite everything it's still me">
     <span>Curtis Halls</span>
+    <button id="menu-button" class="hamburger">&#9776;</button>
   </header>
 
-  <nav>
+  <nav id="nav-menu" class="hidden">
     <ul>
       <li><a href="https://mystdrago.github.io/wdd230/">Home</a></li>
       <li><a href="#">Chamber</a></li>
@@ -42,15 +54,18 @@
       <p>Layton, Utah</p>
       <p>Weather: ???</p>
       <p>Number of visits: ???</p>
-      <p>*To be replaced with (hopefully accurate) Javascript readouts upon a latter assignment*</p>
+      <p>*To be replaced with (hopefully accurate) JavaScript readouts upon a latter assignment*</p>
     </section>
   </main>
 
   <footer>
     <p>&copy;<span id="year"></span> Curtis Halls, Utah, USA</p>
     <p id="lastModified"></p>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
   </footer>
 
   <script src="scripts/getDates.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/darkMode.js"></script>
 </body>
 </html>

@@ -3,6 +3,21 @@
       flex-direction: row; /* Horizontal for larger views */
     }
   
+    #nav-menu {
+      display: block; /* Ensure menu is visible on larger screens */
+      max-height: none; /* Show full menu height */
+      overflow: visible; /* Show overflow if necessary */
+      position: static; /* Adjust positioning as needed for desktop layout */
+      background-color: #ececec; /* Adjust background color as needed */
+      color: #252e35;
+      width: auto; /* Adjust width for desktop layout */
+    }
+  
+    #menu-button {
+      display: none; /* Hide hamburger button on larger screens */
+    }
+  }
+
     main {
       grid-template-columns: 2fr 1fr; /* Two columns for larger views */
     }
@@ -10,5 +25,5 @@
     .card:first-child {
       grid-column: span 2; /* Learning Activities card twice as wide */
     }
-  }
+  
   
