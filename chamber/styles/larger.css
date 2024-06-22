@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    main {
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+    }
+  
+    .hero, .cta {
+      grid-column: span 2;
+    }
+  
+    .events, .weather, .spotlights {
+      grid-column: span 1;
+    }
+  }
