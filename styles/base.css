@@ -98,6 +98,58 @@ footer p {
   margin: 0.5rem 0;
 }
 
+/* Styles for hero images and overlays */
+.hero-container {
+  position: relative;
+  width: 100%; 
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #c0c2da;
+  padding: 1rem;
+}
+
+.overlay-content {
+  max-width: 80%;
+}
+
+.overlay-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles for map section */
+.map-section {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.map-section iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+}
+
+/* Styles for information card */
+.information-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #ececec;
+  border: 1px solid #c0c2da;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   nav ul {
     flex-direction: row;
@@ -157,54 +209,4 @@ body.dark-mode footer {
 body.dark-mode .card {
   background-color: #252e35;
   border-color: #c0c2da;
-}
-
-/* Styles for hero images and overlays */
-.hero-container {
-  position: relative;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  padding: 1rem;
-}
-
-.overlay-content {
-  max-width: 80%;
-}
-
-.overlay-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Styles for map section */
-.map-section {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.map-section iframe {
-  width: 100%;
-  max-width: 100%;
-  height: 450px;
-}
-
-/* Styles for information card */
-.information-card {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  text-align: center;
 }
