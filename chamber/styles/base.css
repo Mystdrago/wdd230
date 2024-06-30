@@ -28,10 +28,12 @@ header h1 {
   font-size: 1.5rem;
 }
 
-.hamburger {
+header .hamburger {
   display: none;
   font-size: 1.5rem;
-  cursor: pointer;
+  background: none;
+  border: none;
+  color: goldenrod;
 }
 
 nav ul {
@@ -55,40 +57,38 @@ nav ul li a {
 
 main {
   padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
-}
-
-.hero img {
-  width: 100%;
-  height: 250px;
-}
-
-.cta {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.cta a {
-  background-color: #252e35;
-  color: #ececec;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.events, .weather, .spotlights {
-  border: 1px solid #c0c2da;
+  border: 1px solid #252e35;
   padding: 1rem;
   background-color: #ececec;
-  border-radius: 5px;
+}
+
+.gallery {
+  border: 1px solid #252e35;
+  padding: 1rem;
+  background-color: #ececec;
+  gap: 1rem;
+}
+
+.gallery figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.1);
+}
+.sidebar{
+  border: 1px solid #252e35;
+  padding: 1rem;
+  background-color: #ececec;
+  gap: 1rem;
 }
 
 footer {
@@ -109,45 +109,11 @@ footer {
   }
 
   main {
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 2fr;
     gap: 1rem;
   }
 
-  .hero, .cta {
-    grid-column: span 2;
-  }
-
-  .events, .weather, .spotlights {
-    grid-column: span 1;
-  }
-}
-
-@media (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
-  
-  nav ul {
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    flex-direction: column;
-    display: none;
-  }
-
-  nav ul.show {
-    display: flex;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .events, .weather, .spotlights {
-    grid-column: span 1;
+  .sidebar, .gallery {
+    grid-column: 2 / span 1;
   }
 }

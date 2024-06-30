@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reno-Tahoe Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Reno-Tahoe Chamber of Commerce. Join us and stay updated with current events.">
+  <link rel="icon" href="images/reno-favicon.web" type="image/x-icon">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <meta property="og:title" content="Reno-Tahoe Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="chamber/images/reno-logo.webp">
+  <meta property="og:url" content="https://mystdrago.github.io/wdd230/chamber/">
+</head>
+<body>
+  <header>
+    <img src="images/reno-logo.webp" alt="Chamber Logo">
+    <h1>Reno-Tahoe Chamber of Commerce</h1>
+    <button id="menu-button" class="hamburger">&#9776;</button>
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li><a href="https://mystdrago.github.io/wdd230/">Class Home</a></li>
+        <li><a href="https://mystdrago.github.io/wdd230/chamber/">Home</a></li>
+        <li><a href="https://mystdrago.github.io/wdd230/chamber/discover/">Discover</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Weather</a></li>
+        <li><a href="#">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="sidebar">
+      <!-- Sidebar content -->
+      <div id="visitMessage">Loading visit message...</div>
+      <figure>
+        <img src="images/placeholder-clock.webp" alt="to be replaced later" loading="lazy">
+        <figcaption>what will later be a working clock when it isn't 11 o'clock on saturday night, becuase I put this down on thursday knowing I had more time and promptly forgot about it till now. Hurray!</figcaption>
+      </figure>
+      <figure>
+        <img src="images/calendar.webp" alt="to be replaced later" loading="lazy">
+        <figcaption>Gonna see if I can't find an event calender for this spot (and then figure out how to add it)</figcaption>
+      </figure>
+      <p>message 3</p>
+      <p>message 4</p>
+      <p>message 5</p>
+      <p>message 6</p>
+    </div>
+    
+    <div class="gallery">
+      <!-- Image gallery with lazy loading -->
+      <figure>
+        <img src="images/reno-arch.webp" alt="Archway" loading="lazy">
+        <figcaption>Welcome to the biggest little city in the world!</figcaption>
+      </figure>
+      <figure>
+        <img src="images/reno-skyline.webp" alt="Skyline" loading="lazy">
+        <figcaption>Join us in our beautiful city, nestled just south of beautiful Mt. Rose</figcaption>
+      </figure>
+      <figure>
+        <img src="images/nugget.webp" alt="Nugget Casino" loading="lazy">
+        <figcaption>Stay at one of our Highend Casino Hotels, Like the Reno Nugget!</figcaption>
+      </figure>
+      <figure>
+        <img src="images/river.webp" alt="Trukee River" loading="lazy">
+        <figcaption>Hiking, Swimming, even Kayacking! Enjoy the Beauty of nature along the scenic Truckee River</figcaption>
+      </figure>
+      <figure>
+        <img src="images/wearhouse.webp" alt="Wearhouse" loading="lazy">
+        <figcaption>Enjoy tax free Wearhousing and toll free roads for all your shipping and storage needs here in Reno, NV.</figcaption>
+     </figure>
+     <figure>
+        <img src="images/aces-baseball.webp" alt="Diamond" loading="lazy">
+        <figcaption>Join us out on the Ballfield, we are the Home of the Minor League Allstars, the Reno Aces!</figcaption>
+      </figure>
+    </div>
+  </main>
+  
+  <footer>
+    <p>Contact us at: curtishalls@ymail.com</p>
+    <p>&copy;<span id="year"></span> Curtis Halls, WDD230</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/visitMessage.js"></script>
+</body>
+</html>

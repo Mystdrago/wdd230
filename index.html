@@ -38,11 +38,11 @@
     <section class="hero-container">
       <picture>
         <!-- Mobile view image -->
-        <source srcset="images/layton-utah-small.webp" media="(max-width: 767px)">
+        <source srcset="images/layton-utah-small.webp" media="(max-width: 767px)" loading="lazy">
         <!-- Larger view image -->
-        <source srcset="images/layton-temple.webp">
+        <source srcset="images/layton-temple.webp" loading="lazy">
         <!-- Default fallback image -->
-        <img src="images/layton-temple.webp" alt="Hero Image">
+        <img src="images/layton-temple.webp" alt="Hero Image" loading="lazy">
       </picture>
       <div class="hero-overlay">
         <div class="overlay-content">
@@ -78,6 +78,7 @@
       <p>Layton, Utah</p>
       <p>Weather: ???</p>
       <p>Number of visits: <span id="pageVisits">0</span></p>
+      <p><span id="lastVisit">0</span></p>
     </section>
   </main>
 
@@ -91,5 +92,6 @@
   <script src="scripts/menu.js"></script>
   <script src="scripts/darkMode.js"></script>
   <script src="scripts/getPageVisits.js"></script>
+  <script src="scripts/visitMessage.js"></script>
 </body>
 </html>
