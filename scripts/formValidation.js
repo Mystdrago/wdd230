@@ -26,25 +26,5 @@ function validateForm(event) {
   }
   
   // Redirect to confirmation page
-  window.location.href = "https://mystdrago.github.io/wdd230/record/";
+  window.location.href = "https://mystdrago.github.io/wdd230/record";
 }
-
-
-
-  
-  // Function to update page rating value
-  function updatePageRating(value) {
-    document.getElementById('page-rating-value').textContent = value;
-  }
-  
-  // Function to initialize page rating
-  function initializePageRating() {
-    var initialValue = document.getElementById('page-rating').value;
-    document.getElementById('page-rating-value').textContent = initialValue;
-  }
-  
-  // Event listener for page load
-  window.addEventListener('load', function() {
-    initializePageRating();
-  });
-  
