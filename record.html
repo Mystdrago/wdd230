@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submission Confirmation</title>
+  <meta name="description" content="Confirmation Page">
+  <meta name="author" content="Curtis Halls">
+  <link rel="icon" href="images/reno-favicon.webp" type="image/x-icon">
+  <meta property="og:title" content="Form Submission Confirmation">
+  <meta property="og:description" content="Confirmation Page">
+  <meta property="og:image" content="images/profile.webp">
+  <meta property="og:url" content="https://mystdrago.github.io/wdd230/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+</head>
+<body>
+  <header>
+    <img src="images/profile.webp" alt="Profile Picture">
+    <span>Curtis Halls</span>
+    <button id="menu-button" class="hamburger">&#9776;</button>
+  </header>
+
+  <nav id="nav-menu" class="hidden">
+    <ul>
+      <li><a href="https://mystdrago.github.io/wdd230/">Home</a></li>
+      <li><a href="https://mystdrago.github.io/wdd230/chamber/">Chamber</a></li>
+      <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="https://mystdrago.github.io/wdd230/form/">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Form Submission Confirmation</h1>
+    <p>Thank you for submitting the form. Your information has been recorded.</p>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="year"></span> Curtis Halls, Utah, USA</p>
+    <p id="lastModified"></p>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </footer>
+
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/darkMode.js"></script>
+  <script src="scripts/getPageVisits.js"></script>
+  <script src="scripts/visitMessage.js"></script>
+</body>
+</html>

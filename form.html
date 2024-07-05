@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtis Halls - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="Home Page">
+  <meta name="author" content="Curtis Halls">
+  <link rel="icon" href="images/reno-favicon.webp" type="image/x-icon">
+  <meta property="og:title" content="Curtis Halls - WDD 230 - Web Frontend Development">
+  <meta property="og:description" content="Home Page">
+  <meta property="og:image" content="images/profile.webp">
+  <meta property="og:url" content="https://mystdrago.github.io/wdd230/">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+    <img src="images/profile.webp" alt="Profile Picture">
+    <span>Curtis Halls</span>
+    <button id="menu-button" class="hamburger">&#9776;</button>
+  </header>
+
+  <nav id="nav-menu" class="hidden">
+    <ul>
+      <li><a href="https://mystdrago.github.io/wdd230/">Home</a></li>
+      <li><a href="https://mystdrago.github.io/wdd230/chamber/">Chamber</a></li>
+      <li><a href="https://mystdrago.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="https://mystdrago.github.io/wdd230/form/">Form</a></li>
+    </ul>
+  </nav>
+
+  <main>
+   <form method="get" action="confirmation.html">
+       <h1>Form Example</h1>
+       <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required>
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required oninput="validatePasswords()">
+        <span id="password-message"></span>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required title="Please enter a valid @byui.edu email address">
+      </div>
+      <div>
+        <label for="page-rating">Page Rating:</label>
+        <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" onchange="updatePageRating(this.value)">
+        <output id="page-rating-value">5</output>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="year"></span> Curtis Halls, Utah, USA</p>
+    <p id="lastModified"></p>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </footer>
+
+  <script src="scripts/formValidation.js"></script>
+  <script src="scripts/pageRating.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/darkMode.js"></script>
+</body>
+</html>
