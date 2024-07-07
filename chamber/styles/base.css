@@ -98,6 +98,51 @@ footer {
   padding: 1rem;
 }
 
+/* Existing CSS rules */
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #252e35;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+}
+
+aside.benefits {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #252e35;
+  background-color: #ececec;
+}
+
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -115,5 +160,18 @@ footer {
 
   .sidebar, .gallery {
     grid-column: 2 / span 1;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    flex: 1;
+    margin-right: 2rem;
+  }
+
+  aside.benefits {
+    flex: 0.5;
   }
 }
