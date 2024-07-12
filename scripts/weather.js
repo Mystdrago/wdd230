@@ -1,5 +1,6 @@
 // Function to fetch weather data from OpenWeatherMap API
-const apiKey = 'your_api_key_here'; // Replace with your API key
+const cityName = "Layton";
+const apiKey = 'f7a7d07c218b566cc25f3c86f4a0601c'; // Replace with your API key
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Layton,US&units=metric&appid=${apiKey}`;
 
 // Function to fetch weather data
