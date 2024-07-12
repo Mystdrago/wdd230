@@ -54,10 +54,8 @@
     
     <section class="card">
       <h2>Learning Activities</h2>
-      <ul>
-        <li><a href="#">Activity 1</a></li>
-        <li><a href="#">Activity 2</a></li>
-        <li><a href="#">Activity 3</a></li>
+      <ul id="activity-links">
+        <!-- Dynamic links will be added here by JavaScript -->
       </ul>
     </section>
 
@@ -76,7 +74,9 @@
     <section class="card">
       <h2>Information</h2>
       <p>Layton, Utah</p>
-      <p>Weather: ???</p>
+      <p>Weather: <span id="weather">Loading...</span></p>
+      <p id="weather-condition">Weather Condition: Loading...</p>
+      <p><img id="weather-icon" src="" alt="Weather Icon"></p>
       <p>Number of visits: <span id="pageVisits">0</span></p>
       <p><span id="lastVisit">0</span></p>
     </section>
@@ -93,5 +93,7 @@
   <script src="scripts/darkMode.js"></script>
   <script src="scripts/getPageVisits.js"></script>
   <script src="scripts/visitMessage.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/links.js"></script>
 </body>
 </html>
