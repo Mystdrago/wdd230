@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Tech Innovators",
+        "address": "123 Tech Lane, Reno, NV 89501",
+        "phone": "555-123-4567",
+        "website": "https://techinnovators.com",
+        "image": "tech-innovators.webp",
+        "membershipLevel": "Gold",
+        "industry": "Technology"
+      },
+      {
+        "name": "Green Solutions",
+        "address": "456 Eco Drive, Reno, NV 89502",
+        "phone": "555-234-5678",
+        "website": "https://greensolutions.com",
+        "image": "green-solutions.webp",
+        "membershipLevel": "Silver",
+        "industry": "Environmental"
+      },
+      {
+        "name": "Health Partners",
+        "address": "789 Wellness Blvd, Reno, NV 89503",
+        "phone": "555-345-6789",
+        "website": "https://healthpartners.com",
+        "image": "health-partners.webp",
+        "membershipLevel": "Platinum",
+        "industry": "Healthcare"
+      },
+      {
+        "name": "Finance Gurus",
+        "address": "101 Money St, Reno, NV 89504",
+        "phone": "555-456-7890",
+        "website": "https://financegurus.com",
+        "image": "finance-gurus.webp",
+        "membershipLevel": "Gold",
+        "industry": "Finance"
+      },
+      {
+        "name": "Edu Masters",
+        "address": "202 Learning Ave, Reno, NV 89505",
+        "phone": "555-567-8901",
+        "website": "https://edumasters.com",
+        "image": "edu-masters.webp",
+        "membershipLevel": "Silver",
+        "industry": "Education"
+      },
+      {
+        "name": "Travel Experts",
+        "address": "303 Adventure Rd, Reno, NV 89506",
+        "phone": "555-678-9012",
+        "website": "https://travelexperts.com",
+        "image": "travel-experts.webp",
+        "membershipLevel": "Bronze",
+        "industry": "Travel"
+      },
+      {
+        "name": "Foodies Delight",
+        "address": "404 Gourmet St, Reno, NV 89507",
+        "phone": "555-789-0123",
+        "website": "https://foodiesdelight.com",
+        "image": "foodies-delight.webp",
+        "membershipLevel": "Platinum",
+        "industry": "Food & Beverage"
+      }
+    ]
+  }
+  

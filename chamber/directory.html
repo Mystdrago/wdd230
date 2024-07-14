@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reno-Tahoe Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Reno-Tahoe Chamber of Commerce. Join us and stay updated with current events.">
+  <link rel="icon" href="images/reno-favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <meta property="og:title" content="Reno-Tahoe Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/logo.webp">
+  <meta property="og:url" content="https://mystdrago.github.io/wdd230/chamber">
+</head>
+<body>
+  <header>
+    <img src="images/reno-logo.webp" alt="Chamber Logo">
+    <h1>Reno-Tahoe Chamber of Commerce</h1>
+    <button class="hamburger">&#9776;</button>
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li><a href="https://mystdrago.github.io/wdd230">Class Home</a></li>
+        <li><a href="https://mystdrago.github.io/wdd230/chamber">Home</a></li>
+        <li><a href="https://mystdrago.github.io/wdd230/chamber/discover">Discover</a></li>
+        <li><a href="https://mystdrago.github.io/wdd230/chamber/join">Join Us</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="directory">
+      <button id="toggle-view">Toggle View</button>
+      <div id="members-container" class="grid-view"></div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Contact us at: curtishalls@ymail.com</p>
+    <p>&copy;<span id="year"></span> Curtis Halls, WDD230</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/getDates.js"></script>
+  <script src="chamber/scripts/getPageVisits.js"></script>
+  <script src="scripts/visitMessage.js"></script>
+  <script src="chamber/scripts/members.js"></script>
+</body>
+</html>
