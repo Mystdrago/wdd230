@@ -1,69 +1,56 @@
-const baseURL = 'https://mystdrago.github.io/wdd230/chamber/';
-const membersURL = `${baseURL}data/members.json`;
+document.addEventListener("DOMContentLoaded", function() {
+  const membersContainer = document.getElementById('members-container');
+  const toggleButton = document.getElementById('toggle-view');
 
-// Fetch member data from the JSON file
-async function fetchMembers() {
-  try {
-    const response = await fetch(membersURL);
-    if (!response.ok) {
-      throw new Error('Failed to fetch member data');
-    }
-    const data = await response.json();
-    return data.members;
-  } catch (error) {
-    console.error('Error fetching member data:', error);
+  fetch('chamber/data/members.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      displayMembers(data.members); // Display members initially
+    })
+    .catch(error => {
+      console.error('Error fetching members:', error);
+    });
+
+  function displayMembers(members) {
+    membersContainer.innerHTML = ''; // Clear container
+
+    members.forEach(member => {
+      const memberCard = createMemberCard(member);
+      membersContainer.appendChild(memberCard);
+    });
   }
-}
 
-// Function to display members in the DOM
-function displayMembers(members, view = 'grid') {
-  const container = document.getElementById('members-container');
-  container.innerHTML = ''; // Clear any existing content
-  container.className = view + '-view';
+  function createMemberCard(member) {
+    const card = document.createElement('div');
+    card.classList.add('member-card');
 
-  members.forEach(member => {
-    const memberElement = document.createElement('div');
-    memberElement.classList.add('member');
+    const image = document.createElement('img');
+    image.src = `chamber/images/${member.image}`;
+    image.alt = member.name;
+    card.appendChild(image);
 
-    if (view === 'grid') {
-      memberElement.innerHTML = `
-        <img src="${baseURL}images/${member.image}" alt="${member.name}">
-        <h3>${member.name}</h3>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-        <p>${member.membershipLevel}</p>
-        <p>${member.industry}</p>
-      `;
-    } else {
-      memberElement.innerHTML = `
-        <img src="${baseURL}images/${member.image}" alt="${member.name}">
-        <div>
-          <h3>${member.name}</h3>
-          <p>${member.address}</p>
-          <p>${member.phone}</p>
-          <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-          <p>${member.membershipLevel}</p>
-          <p>${member.industry}</p>
-        </div>
-      `;
-    }
+    const details = document.createElement('div');
+    details.classList.add('member-details');
+    details.innerHTML = `
+      <h2>${member.name}</h2>
+      <p><strong>Address:</strong> ${member.address}</p>
+      <p><strong>Phone:</strong> ${member.phone}</p>
+      <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+      <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
+      <p><strong>Industry:</strong> ${member.industry}</p>
+    `;
+    card.appendChild(details);
 
-    container.appendChild(memberElement);
+    return card;
+  }
+
+  toggleButton.addEventListener('click', function() {
+    membersContainer.classList.toggle('grid-view');
   });
-}
-
-// Event listener for the toggle view button
-document.getElementById('toggle-view').addEventListener('click', () => {
-  const container = document.getElementById('members-container');
-  const currentView = container.classList.contains('grid-view') ? 'grid' : 'list';
-  const newView = currentView === 'grid' ? 'list' : 'grid';
-  displayMembers(currentMembers, newView);
 });
 
-// Fetch and display members on page load
-let currentMembers = [];
-fetchMembers().then(members => {
-  currentMembers = members;
-  displayMembers(members, 'grid');
-});

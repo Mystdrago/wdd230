@@ -99,50 +99,6 @@ footer {
   padding: 1rem;
 }
 
-/* Existing CSS rules */
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-/* Form styles */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form div {
-  margin-bottom: 1rem;
-}
-
-form label {
-  margin-bottom: 0.5rem;
-}
-
-form input,
-form select,
-form textarea {
-  padding: 0.5rem;
-  border: 1px solid #252e35;
-  border-radius: 5px;
-  width: 100%;
-}
-
-textarea {
-  height: 100px;
-}
-
-aside.benefits {
-  margin-top: 2rem;
-  padding: 1rem;
-  border: 1px solid #252e35;
-  background-color: #ececec;
-}
-
 /* Styles for member directory */
 #members-container {
   display: flex;
@@ -150,18 +106,18 @@ aside.benefits {
   gap: 1rem;
 }
 
-#members-container.grid-view .member {
+#members-container.grid-view .member-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #ececec;
   margin: 10px;
   padding: 20px;
   width: calc(33.333% - 20px);
   box-sizing: border-box;
 }
 
-#members-container.grid-view .member img {
+#members-container.grid-view .member-card img {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
@@ -171,53 +127,20 @@ aside.benefits {
   display: block;
 }
 
-#members-container.list-view .member {
+#members-container.list-view .member-card {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ececec;
   padding: 10px;
 }
 
-#members-container.list-view .member img {
+#members-container.list-view .member-card img {
   width: 50px;
   height: 50px;
   margin-right: 1rem;
   display: block;
 }
 
-#members-container.list-view .member div {
+#members-container.list-view .member-card div {
   flex: 1;
-}
-
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  main {
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
-  }
-
-  .sidebar, .gallery {
-    grid-column: 2 / span 1;
-  }
-  main {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  form {
-    flex: 1;
-    margin-right: 2rem;
-  }
-
-  aside.benefits {
-    flex: 0.5;
-  }
 }
