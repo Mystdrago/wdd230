@@ -2,7 +2,7 @@
     "members": [
       {
         "name": "Tech Innovators",
-        "address": "123 Tech Lane, Reno, NV 89501",
+        "address": "123 Tech Lane, Reno, NV 89508",
         "phone": "555-123-4567",
         "website": "https://techinnovators.com",
         "image": "tech-innovators.webp",
@@ -11,7 +11,7 @@
       },
       {
         "name": "Green Solutions",
-        "address": "456 Eco Drive, Reno, NV 89502",
+        "address": "456 Eco Drive, Reno, NV 89508",
         "phone": "555-234-5678",
         "website": "https://greensolutions.com",
         "image": "green-solutions.webp",
@@ -20,7 +20,7 @@
       },
       {
         "name": "Health Partners",
-        "address": "789 Wellness Blvd, Reno, NV 89503",
+        "address": "789 Wellness Blvd, Reno, NV 89508",
         "phone": "555-345-6789",
         "website": "https://healthpartners.com",
         "image": "health-partners.webp",
@@ -29,7 +29,7 @@
       },
       {
         "name": "Finance Gurus",
-        "address": "101 Money St, Reno, NV 89504",
+        "address": "101 Money St, Reno, NV 89508",
         "phone": "555-456-7890",
         "website": "https://financegurus.com",
         "image": "finance-gurus.webp",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Edu Masters",
-        "address": "202 Learning Ave, Reno, NV 89505",
+        "address": "202 Learning Ave, Reno, NV 89508",
         "phone": "555-567-8901",
         "website": "https://edumasters.com",
         "image": "edu-masters.webp",
@@ -47,7 +47,7 @@
       },
       {
         "name": "Travel Experts",
-        "address": "303 Adventure Rd, Reno, NV 89506",
+        "address": "303 Adventure Rd, Reno, NV 89508",
         "phone": "555-678-9012",
         "website": "https://travelexperts.com",
         "image": "travel-experts.webp",
@@ -56,7 +56,7 @@
       },
       {
         "name": "Foodies Delight",
-        "address": "404 Gourmet St, Reno, NV 89507",
+        "address": "404 Gourmet St, Reno, NV 89508",
         "phone": "555-789-0123",
         "website": "https://foodiesdelight.com",
         "image": "foodies-delight.webp",

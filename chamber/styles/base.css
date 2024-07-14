@@ -84,7 +84,8 @@ main {
 .gallery figure:hover img {
   transform: scale(1.1);
 }
-.sidebar{
+
+.sidebar {
   border: 1px solid #252e35;
   padding: 1rem;
   background-color: #ececec;
@@ -142,6 +143,13 @@ aside.benefits {
   background-color: #ececec;
 }
 
+/* Styles for member directory */
+#members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 #members-container.grid-view .member {
   display: flex;
   flex-direction: column;
@@ -149,18 +157,37 @@ aside.benefits {
   border: 1px solid #ccc;
   margin: 10px;
   padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+#members-container.grid-view .member img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#members-container.list-view {
+  display: block;
 }
 
 #members-container.list-view .member {
-  display: block;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ccc;
   padding: 10px;
 }
 
 #members-container.list-view .member img {
-  display: none;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  display: block;
 }
 
+#members-container.list-view .member div {
+  flex: 1;
+}
 
 @media (min-width: 768px) {
   .hamburger {
