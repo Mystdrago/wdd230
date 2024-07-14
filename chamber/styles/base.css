@@ -144,3 +144,7 @@ footer {
 #members-container.list-view .member-card div {
   flex: 1;
 }
+.toggle-view {
+  width: 50px;
+  height: 10;
+}
