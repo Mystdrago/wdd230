@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const toggleButton = document.getElementById('toggle-view');
 
   // Load members from JSON file and display initially
-  fetch('chamber/data/members.json')
+  fetch('../chamber/data/members.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
