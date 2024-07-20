@@ -22,20 +22,18 @@
 
   .grid-container {
     display: grid;
-    place-items: center;
+    place-items: left;
     grid-template-columns: 100% 100% 100%;
     grid-template-rows: auto auto auto;
     gap: 1rem;
   }
 
   .weather {
-    place-items: center;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
   }
 
   .spotlights {
-    place-items: left;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
