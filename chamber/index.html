@@ -28,7 +28,12 @@
       </ul>
     </nav>
   </header>
-  
+
+  <div id="banner" class="banner">
+    <p>Meet and Greet on Wednesday, July 24th, 2024</p>
+    <button id="close-banner">X</button>
+  </div>
+
   <main>
     <section class="hero">
       <img src="images/reno-banner.webp" alt="Hero Image (banner)">
@@ -36,19 +41,22 @@
     <section class="cta">
       <a href="https://mystdrago.github.io/wdd230/chamber/join">Join the Chamber of Commerce</a>
     </section>
-    <section class="grid-container">
-      <section class="spotlights">
-        <h2>Company Spotlights</h2>
-        <p>Placeholder content for company spotlights.</p>
-      </section>
-      <section class="events">
-        <h2>Current Events</h2>
-        <p>Placeholder content for current events.</p>
-      </section>
-      <section class="weather">
-        <h2>Weather</h2>
-        <p>Placeholder content for weather.</p>
-      </section>
+    <section class="grid-container"></section>
+    <section class="spotlights">
+      <h2>Company Spotlights</h2>
+      <div id="spotlight-container">
+        <!-- Spotlight content will be inserted here -->
+      </div>
+    </section>
+    <section class="weather">
+      <h2>Weather</h2>
+      <div id="weather-container">
+        <p id="current-temp"></p>
+        <p id="current-weather"></p>
+        <div id="forecast">
+          <!-- Forecast will be inserted here -->
+        </div>
+      </div>
     </section>
   </main>
   
@@ -60,7 +68,10 @@
 
   <script src="scripts/menu.js"></script>
   <script src="scripts/getDates.js"></script>
-  <script src="chamber/scripts/getPageVisits.js"></script>
+  <script src="scripts/getPageVisits.js"></script>
   <script src="scripts/visitMessage.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/spotlight.js"></script>
+  <script src="scripts/banner.js"></script>
 </body>
 </html>
