@@ -29,11 +29,13 @@
   }
 
   .weather {
+    place-items: center;
     grid-column: 1 / 4;
     grid-row: 3 / 4;
   }
 
   .spotlights {
+    place-items: center;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
