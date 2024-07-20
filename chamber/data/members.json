@@ -1,65 +1,65 @@
 {
     "members": [
       {
-        "name": "Tech Innovators",
+        "name": "Cal-Am Properties Inc",
         "address": "123 Tech Lane, Reno, NV 89508",
         "phone": "555-123-4567",
-        "website": "https://techinnovators.com",
-        "image": "tech-innovators.webp",
+        "website": "https://cal-am.com",
+        "image": "cal-am.webp",
         "membershipLevel": "Gold",
-        "industry": "Technology"
+        "industry": "Realestate"
       },
       {
-        "name": "Green Solutions",
+        "name": "Reno Foot & Ankle",
         "address": "456 Eco Drive, Reno, NV 89508",
         "phone": "555-234-5678",
-        "website": "https://greensolutions.com",
-        "image": "green-solutions.webp",
+        "website": "https://renofootandankle.com",
+        "image": "foot-ankle.webp",
         "membershipLevel": "Silver",
-        "industry": "Environmental"
-      },
-      {
-        "name": "Health Partners",
-        "address": "789 Wellness Blvd, Reno, NV 89508",
-        "phone": "555-345-6789",
-        "website": "https://healthpartners.com",
-        "image": "health-partners.webp",
-        "membershipLevel": "Platinum",
         "industry": "Healthcare"
       },
       {
-        "name": "Finance Gurus",
+        "name": "Viloria, Oliphant, Oster & Aman L.L.P.",
+        "address": "789 Wellness Blvd, Reno, NV 89508",
+        "phone": "555-345-6789",
+        "website": "https://www.renonvlaw.com",
+        "image": "vooa.webp",
+        "membershipLevel": "Platinum",
+        "industry": "Law"
+      },
+      {
+        "name": "Jacksons",
         "address": "101 Money St, Reno, NV 89508",
         "phone": "555-456-7890",
-        "website": "https://financegurus.com",
-        "image": "finance-gurus.webp",
+        "website": "https://jacksons.com",
+        "image": "jacksons.webp",
         "membershipLevel": "Gold",
-        "industry": "Finance"
+        "industry": "Food & Beverage"
       },
       {
-        "name": "Edu Masters",
+        "name": "Swift Institute",
         "address": "202 Learning Ave, Reno, NV 89508",
         "phone": "555-567-8901",
-        "website": "https://edumasters.com",
-        "image": "edu-masters.webp",
+        "website": "https://theswiftinstitute.com",
+        "image": "swift.webp",
         "membershipLevel": "Silver",
-        "industry": "Education"
+        "industry": "Healthcare"
       },
       {
-        "name": "Travel Experts",
+        "name": "Key & Code Escape Rooms",
         "address": "303 Adventure Rd, Reno, NV 89508",
         "phone": "555-678-9012",
-        "website": "https://travelexperts.com",
-        "image": "travel-experts.webp",
+        "website": "https://www.keyandcode.com",
+        "image": "keyandcode.webp",
         "membershipLevel": "Bronze",
-        "industry": "Travel"
+        "industry": "Entertainment"
       },
       {
         "name": "Foodies Delight",
         "address": "404 Gourmet St, Reno, NV 89508",
         "phone": "555-789-0123",
-        "website": "https://foodiesdelight.com",
-        "image": "foodies-delight.webp",
+        "website": "https://www.rainbowmkt.com",
+        "image": "rainbowmkt.webp",
         "membershipLevel": "Platinum",
         "industry": "Food & Beverage"
       }
