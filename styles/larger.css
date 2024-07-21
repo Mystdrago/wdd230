@@ -26,8 +26,9 @@
       grid-column: span 2; /* Learning Activities card twice as wide */
     }
     #hero-container{
-      grid-column: span 1/-1;
+      grid-column: span -1/1;
       width: 100%;
+      justify-self: center;
     }
   
   
