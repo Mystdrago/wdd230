@@ -25,5 +25,8 @@
     .card:first-child {
       grid-column: span 2; /* Learning Activities card twice as wide */
     }
+    #hero-container{
+      grid-column: span 1/-1;
+    }
   
   
