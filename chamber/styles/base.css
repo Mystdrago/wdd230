@@ -187,3 +187,13 @@ footer {
 .spotlight-details p {
   margin: 5px 0;
 }
+
+#clock {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  background-color: #252e35;
+  color: #ececec;
+  border-radius: 5px;
+}

@@ -31,19 +31,22 @@
   <main>
     <div class="sidebar">
       <!-- Sidebar content -->
-      <div id="visitMessage">Loading visit message...</div>
       <figure>
-        <img src="images/placeholder-clock.webp" alt="to be replaced later" loading="lazy">
-        <figcaption>what will later be a working clock when it isn't 11 o'clock on saturday night, becuase I put this down on thursday knowing I had more time and promptly forgot about it till now. Hurray!</figcaption>
+        <div id="clock"></div>
+        <figcaption>Current time in Reno, NV</figcaption>
       </figure>
       <figure>
         <img src="images/calendar.webp" alt="to be replaced later" loading="lazy">
-        <figcaption>Gonna see if I can't find an event calender for this spot (and then figure out how to add it)</figcaption>
+        <figcaption>I couldn't find a free API for this saddly.</figcaption>
       </figure>
-      <p>message 3</p>
-      <p>message 4</p>
-      <p>message 5</p>
-      <p>message 6</p>
+      <div id="weather-container">
+        <p id="current-temp"></p>
+        <p id="current-weather"></p>
+        <div id="forecast">
+          <!-- Forecast will be inserted here -->
+        </div>
+      </div>
+      <div id="visitMessage">Loading visit message...</div>
     </div>
     
     <div class="gallery">
@@ -84,5 +87,6 @@
   <script src="scripts/menu.js"></script>
   <script src="scripts/getDates.js"></script>
   <script src="scripts/visitMessage.js"></script>
+  <script src="scripts/clock.js"></script>
 </body>
 </html>
