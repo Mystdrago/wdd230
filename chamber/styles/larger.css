@@ -71,6 +71,17 @@
     display: block;
     place-items: center; /* Centering the content */ 
   }
+
+  #members-container {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #members-container.grid-view .member-card {
+    width: calc(33.333% - 2rem);
+  }
   
   footer {
     background-color: #252e35;

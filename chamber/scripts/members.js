@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Create and append image element
     const image = document.createElement('img');
-    image.src = `chamber/images/${member.image}`;
+    image.src = `images/${member.image}`;
     image.alt = member.name;
     card.appendChild(image);
 
