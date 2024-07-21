@@ -62,6 +62,16 @@
     transform: scale(1.1);
   }
 
+  #toggle-view {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+    height: 50px;
+    width: 100px; 
+    margin: 1rem auto; 
+    display: block;
+    place-items: center; /* Centering the content */ 
+  }
+  
   footer {
     background-color: #252e35;
     color: #ececec;
